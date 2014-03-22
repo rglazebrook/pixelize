@@ -28,14 +28,14 @@ There is an [example of the plugin on CodePen](http://codepen.io/rglazebrook/pen
 Usage
 -----
 
-  1. Create an element with an ID or class in your page (example: `<div id="pixels"></div>`)
+  1. Create an element with an ID or class in your page: `<div id="pixels"></div>`
   2. Include the pixelize plugin somewhere after you've loaded jQuery.
-  3. Create an array for pixelize to use (e.g., `[['#fff','#f00','#fff'],['#f00','#fff','#f00']]`)
+  3. Create an array for pixelize to use: `var my_array = [['#fff','#f00','#fff'],['#f00','#fff','#f00']]`
   4. Call pixelize: `$('#pixels').pixelize(my_array);`
 
 Tips
 ----
 
-  * Each "pixel" created is 1em square. To change the size of the pixels, just use CSS to set a font-size on the element being pixelized. In our example above, `#pixels { font-size: 5px; }` would result in 5px square pixels.
+  * Each "pixel" created is 1em square. To change the size of the pixels and resultant pixel art, just use CSS to set a font-size on the element being pixelized. In our example above, `#pixels { font-size: 5px; }` would result in 5px square pixels.
   * Pixels are drawn from the top-left to the bottom-right, so you'll need to add some margins to the element to ensure there's no overlap with things below or to the right.
   * You can set the colors you plan to use as variables with short names in order to simplify your 2D array. Example: `var r='#f00', g='#0f0', pixels = [[r,r,r],[r,g,r],[g,g,g]];`
